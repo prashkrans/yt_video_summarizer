@@ -121,7 +121,7 @@ with gr.Blocks(
             file_name = gr.Textbox(label="Provide File Name")
             lang = gr.Radio(
                     label="Select Summary language",
-                    choices=['English', 'Hindi', 'Spanish', 'French', 'German'],
+                    choices=['English', 'Hindi', 'Spanish', 'French'],
                     # Verified that both mixtral and llama3 works well with the above five languages
                     value='English'
             )
