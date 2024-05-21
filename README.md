@@ -44,4 +44,7 @@ Note: GROQ_AI_API_KEY could be replaced with dot_env or direct api key in line 9
 
 ### Note:
 - Used Whisper medium to generate transcription.
-- Used mixtral and llama3_70b (hosted on Groq) LLMs to summarize the transcription generated. 
+- Used mixtral and llama3_70b (hosted on Groq) LLMs to summarize the transcription generated.
+
+### License
+This gradio app and Whisper's code and model weights are released under the MIT License. See [LICENSE](LICENSE) for further details.
