@@ -1,7 +1,7 @@
 {
-  "VIDEO_DIR": "path_to_resources/video_dir",
-  "AUDIO_DIR": "path_to_resources/audio_dir",
-  "JSON_DIR": "path_to_resources/json_dir",
-  "OUTPUT_DIR": "path_to_resources/output_dir",
-  "PARAMS_JSON_PATH": "path_to_base_dir/params.json"
+  "VIDEO_DIR": "./resources/video_dir",
+  "AUDIO_DIR": "./resources/audio_dir",
+  "JSON_DIR": "./resources/json_dir",
+  "OUTPUT_DIR": "./resources/output_dir",
+  "PARAMS_JSON_PATH": "./params.json"
 }
