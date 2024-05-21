@@ -2,10 +2,7 @@
 Summarizes a youtube video provided yt video url and file name 
 
 ### Demo Video:
-<video width="600" controls>
-  <source src="./resources/repo_dir/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/prashkrans/yt_video_summarizer/assets/37745849/b06335f8-f5f6-4719-977d-dacc51bfcaf0
 
 ### Prerequisites:
 - Python 3.10 (Might work with other versions as well)
