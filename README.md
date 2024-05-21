@@ -1,6 +1,12 @@
 # Youtube Video Summarizer
 Summarizes a youtube video provided yt video url and file name 
 
+### Demo Video:
+<video width="600" controls>
+  <source src="./resources/repo_dir/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ### Prerequisites:
 - Python 3.10 (Might work with other versions as well)
 - Nvidia drivers installed along with CUDA
@@ -34,7 +40,7 @@ Note: GROQ_AI_API_KEY could be replaced with dot_env or direct api key in line 9
 ### Usage:
 1. When the gradio app has started, provide the YT video url and file name.
 2. Select a language in which the summary is required.
-3. Select the work limit.
+3. Select the word limit.
 4. Select "Summarize as bullet points" if the summary is to be created as bullet points.
 5. Click on "Summarize Video" and wait for processing to end.
 6. Upon completion of processing two different summaries and the original transcription would be presented which could be download as well.
