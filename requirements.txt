@@ -1,0 +1,7 @@
+pytube
+moviepy
+torch
+openai-whisper
+transformers
+gradio
+groq

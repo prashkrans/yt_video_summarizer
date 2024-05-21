@@ -1,0 +1,7 @@
+{
+  "VIDEO_DIR": "/home/nashprat/workspace/whisper_large_v2/video_summarizer/resources/video_dir",
+  "AUDIO_DIR": "/home/nashprat/workspace/whisper_large_v2/video_summarizer/resources/audio_dir",
+  "JSON_DIR": "/home/nashprat/workspace/whisper_large_v2/video_summarizer/resources/json_dir",
+  "OUTPUT_DIR": "/home/nashprat/workspace/whisper_large_v2/video_summarizer/resources/output_dir",
+  "PARAMS_JSON_PATH": "/home/nashprat/workspace/whisper_large_v2/video_summarizer/params.json"
+}
