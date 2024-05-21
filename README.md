@@ -41,3 +41,7 @@ Note: GROQ_AI_API_KEY could be replaced with dot_env or direct api key in line 9
 4. Select "Summarize as bullet points" if the summary is to be created as bullet points.
 5. Click on "Summarize Video" and wait for processing to end.
 6. Upon completion of processing two different summaries and the original transcription would be presented which could be download as well.
+
+### Note:
+- Used Whisper medium to generate transcription
+- Used mixtral and llama3_70b LLMs to summarize the transcription generated hosted on Groq
