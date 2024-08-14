@@ -4,7 +4,7 @@
 - Also, provides an option to download the yt video or its audio track.
 
 ### Demo Video:
-https://github.com/user-attachments/assets/d078759b-6ab4-4b1f-9323-3b9c7dc4b136
+https://github.com/user-attachments/assets/72d64ef6-9769-438c-bc43-f2adcc5d37a0
 
 ### Prerequisites:
 - Python 3.10 (Might work with higher versions as well)
