@@ -49,7 +49,7 @@ def summarize(file_name, word_limit, as_bullets, transcribed_text=None):
     #
     # suffix = f'{word_limit}w_{lang.lower()[:3]}'
 
-    prompt = f'Summarize the text below of {word_count} words within the hard word limit of {word_limit} words.'
+    prompt = f'Summarize the text below of {word_count} words within the hard word limit of {word_limit} words '
     suffix = f'{word_limit}w'
 
     if as_bullets == True:
