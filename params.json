@@ -1,7 +1,8 @@
 {
-    "YT_VIDEO_URL": "https://www.youtube.com/watch?v=WsEQjeZoEng",
-    "FILE_NAME": "google_io",
-    "LANGUAGE": "English",
-    "WORD_LIMIT": "350",
-    "AS_BULLETS": "True"
+    "YT_VIDEO_URL": "https://www.youtube.com/shorts/BLW4hCFwSXE",
+    "FILE_NAME": "old",
+    "TRANSLATE_TO_ENGLISH": "True",
+    "WORD_LIMIT": "100",
+    "AS_BULLETS": "True",
+    "VIDEO_RESOLUTION": "FHD"
 }

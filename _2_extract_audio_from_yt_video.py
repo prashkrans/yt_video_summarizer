@@ -16,11 +16,13 @@ def extract_audio(file_name):
         audio_clip.write_audiofile(output_audio_path) # Generates higher quality .wav files but could be avoided to save time
         video_clip.close()
         print("Audio extracted successfully!")
+        return output_audio_path
     except Exception as e:
         print("An error occurred:", e)
+        return None
 
-# if __name__ == "__main__": # Commented out as using gradio app instead of running step wise | May need debugging
-#     params_dict = json_read(PARAMS_JSON_PATH)
-#     file_name = params_dict['FILE_NAME']
-#     extract_audio(file_name)
+if __name__ == "__main__":
+    params_dict = json_read(PARAMS_JSON_PATH)
+    file_name = params_dict['FILE_NAME']
+    extract_audio(file_name)
 

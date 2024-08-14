@@ -28,16 +28,22 @@ OUTPUT_DIR = config['OUTPUT_DIR']
 PARAMS_JSON_PATH = config['PARAMS_JSON_PATH']
 # SERVER = config['SERVER']
 
-LANG_CODE_DICT = {
-    'Hindi': 'hi',
-    # 'Tamil': 'ta',
-    # 'Marathi': 'mr',
-    # 'Kannada': 'ka',
-    'English': 'en',
-    'French': 'fr',
-    'Spanish': 'es',
-    'German': 'de'
+RESOLUTION_MAP = {
+    "SD": "480",
+    "HD": "720",
+    "FHD": "1080"
 }
+
+# LANG_CODE_DICT = {
+#     'Hindi': 'hi',
+#     'Tamil': 'ta',
+#     'Marathi': 'mr',
+#     'Kannada': 'ka',
+#     'English': 'en',
+#     'French': 'fr',
+#     'Spanish': 'es',
+#     'German': 'de'
+# }
 
 class FILE_TYPE(Enum):
     VIDEO = 1

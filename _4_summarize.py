@@ -1,12 +1,12 @@
-# Groq api cannot be use with auto gen currently, hence using groq directly using pip install groq and its api_key
 import os
 from groq import Groq
-from _utils import OUTPUT_DIR, PARAMS_JSON_PATH, json_read, write_text_file, read_text_file
+from _utils import OUTPUT_DIR, write_text_file, read_text_file, PARAMS_JSON_PATH, json_read
 
-def summarize(file_name, lang, word_limit, as_bullets, transcribed_text=None):
+
+def summarize(file_name, word_limit, as_bullets, transcribed_text=None):
     print("Initiating text summarization of the extracted text")
     client = Groq(
-        api_key=os.environ.get("GROQ_AI_API_KEY"),
+        api_key=os.environ.get("GROQ_API_KEY"),
         # Currently it supports only three models - gemma(bad), llama3-70b, and mixtral-8x7b
         # Need to update this if groq withdraws any of the three above llm (e.g. it has stopped hosting llama2)
     )
@@ -44,10 +44,14 @@ def summarize(file_name, lang, word_limit, as_bullets, transcribed_text=None):
             word_limit = word_count
 
 
-    prompt = (f'Summarize the text below of {word_count} words within the hard word limit of {word_limit} words '
-              f'in {lang} language ')
+    # prompt = (f'Summarize the text below of {word_count} words within the hard word limit of {word_limit} words '
+    #           f'in {lang} language ')
+    #
+    # suffix = f'{word_limit}w_{lang.lower()[:3]}'
 
-    suffix = f'{word_limit}w_{lang.lower()[:3]}'
+    prompt = f'Summarize the text below of {word_count} words within the hard word limit of {word_limit} words.'
+    suffix = f'{word_limit}w'
+
     if as_bullets == True:
         print('Summarization sytle is as bullets')
         prompt += 'as bullet points. '
@@ -85,7 +89,7 @@ def summarize(file_name, lang, word_limit, as_bullets, transcribed_text=None):
                 "content": text
             }
         ],
-        model="llama3-70b-8192"
+        model="llama-3.1-70b-Versatile"
     )
 
     # # gemma-7b-it doesn't support hindi
@@ -119,10 +123,9 @@ def summarize(file_name, lang, word_limit, as_bullets, transcribed_text=None):
         transcribed_text_path
     )
 
-# if __name__ == "__main__": # Commented out as using gradio app instead of running step wise | May need debugging
-#     params_dict = json_read(PARAMS_JSON_PATH)
-#     file_name = params_dict['FILE_NAME']
-#     lang = params_dict['LANGUAGE']
-#     word_limit = params_dict['WORD_LIMIT']
-#     as_bullets = eval(params_dict['AS_BULLETS'])
-#     summarize(file_name, lang, word_limit, as_bullets)
+if __name__ == "__main__": # Commented out as using gradio app instead of running step wise | May need debugging
+    params_dict = json_read(PARAMS_JSON_PATH)
+    file_name = params_dict['FILE_NAME']
+    word_limit = params_dict['WORD_LIMIT']
+    as_bullets = eval(params_dict['AS_BULLETS'])
+    summarize(file_name, word_limit, as_bullets)

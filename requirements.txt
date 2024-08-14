@@ -1,7 +1,5 @@
-pytube
-moviepy
-torch
-openai-whisper
-transformers
+yt-dlp==2024.7.16
+moviepy==1.0.3
+openai-whisper==20231117
 gradio
 groq
