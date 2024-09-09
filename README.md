@@ -8,6 +8,7 @@ https://github.com/user-attachments/assets/72d64ef6-9769-438c-bc43-f2adcc5d37a0
 
 ### Prerequisites:
 - Python 3.10 (Might work with higher versions as well)
+- FFMPEG: `sudo apt install ffmpeg`
 - Nvidia drivers installed along with CUDA for whisper
 - Nvidia GPU with VRAM atleast 6GB (medium) or 10GB (large-v2)
 - CPU can also be used but is awfully slow
