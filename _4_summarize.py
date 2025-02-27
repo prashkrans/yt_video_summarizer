@@ -89,7 +89,7 @@ def summarize(file_name, word_limit, as_bullets, transcribed_text=None):
                 "content": text
             }
         ],
-        model="llama-3.1-70b-Versatile"
+        model="llama-3.3-70b-versatile"
     )
 
     # # gemma-7b-it doesn't support hindi
